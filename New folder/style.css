@@ -1,0 +1,391 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Noto+Sans:wght@300;500;600;700;800;900&family=Nunito+Sans:wght@400;700;800;900&display=swap");
+.modal-dialog {
+  overflow-y: initial !important;
+}
+
+.modal-body {
+  height: 80vh !important;
+  overflow-y: auto;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-weight: 400;
+  font-family: "Lato", sans-serif;
+}
+
+a, li {
+  text-decoration: none;
+  list-style-type: none;
+  list-style: none;
+}
+
+a:hover {
+  -webkit-text-decoration: auto;
+  text-decoration: auto;
+  color: unset;
+}
+
+img {
+  max-width: 100%;
+  width: auto;
+  height: auto;
+}
+
+video {
+  width: 100%;
+  height: auto;
+}
+
+address {
+  margin: 0 !important;
+}
+
+.modal__title {
+  font-size: 20px;
+  font-weight: 500;
+  font-style: normal;
+  color: #333333;
+}
+.modal__title strong {
+  color: #D53D38;
+}
+.modal__btn {
+  background-color: transparent;
+  border: 0;
+  color: #333333;
+  font-size: 18px;
+  font-weight: 400;
+  height: 18px;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.close-btn {
+  color: #D53D38;
+  font-size: 22px;
+}
+
+select::-ms-expand, select {
+  display: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+hr {
+  width: 100%;
+  border: 2px solid #f1f1f1;
+}
+
+.close {
+  opacity: 1 !important;
+}
+
+input[type=checkbox] + label {
+  display: block;
+  margin: 0.2em;
+  cursor: pointer;
+  padding: 0.2em;
+}
+
+label {
+  width: 100%;
+}
+
+input[type=checkbox] {
+  display: none;
+}
+
+input[type=checkbox] + label:before {
+  content: "✔";
+  border: 0.1em solid #000;
+  display: inline-block;
+  font-size: 11px;
+  padding-left: 3px;
+  padding-right: 3px;
+  /* padding-bottom: 0.3em; */
+  margin-right: 0.2em;
+  vertical-align: bottom;
+  color: transparent;
+  transition: 0.2s;
+  margin-bottom: 1.5px;
+  margin-right: 9px;
+}
+
+input[type=checkbox]:checked + label:before {
+  background-color: #fff;
+  border-color: #000;
+  color: #000;
+}
+
+.custom-checkbox {
+  font-size: 16px;
+  font-weight: 500;
+  font-style: normal;
+  text-align: left;
+  color: #333333;
+}
+
+@media (min-width: 992px) {
+  .modal-lg, .modal-xl {
+    max-width: 590px;
+  }
+}
+.form__title {
+  font-size: 18px;
+  font-weight: 500;
+  font-style: normal;
+  text-align: left;
+  color: #054060;
+}
+
+.text-field {
+  height: 48px;
+  padding-left: 17px;
+  padding-top: 3px;
+  border: 1px solid #d5d5d5;
+}
+.text-field::-moz-placeholder {
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  text-align: left;
+  color: #999999;
+}
+.text-field:-ms-input-placeholder {
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  text-align: left;
+  color: #999999;
+}
+.text-field::placeholder {
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  text-align: left;
+  color: #999999;
+}
+.text-field:focus-visible {
+  outline: #D53D38 solid 2px;
+}
+
+.inner-lable {
+  text-align: start;
+  margin-top: 38px;
+  margin-bottom: 12px;
+}
+
+p {
+  margin: 0;
+}
+
+.btn-submit {
+  font-size: 16px;
+  font-weight: 500;
+  font-style: normal;
+  text-align: center;
+  color: #FFFFFF;
+  width: 135px;
+  height: 37px;
+  float: right;
+  border-color: white;
+  border-width: 1px;
+  border-style: solid;
+  background: #054060;
+}
+.btn-submit:hover {
+  color: #fff !important;
+  background-color: #D53D38;
+}
+
+.outer-check {
+  margin-top: 23px;
+  margin-bottom: 18px;
+}
+
+hr {
+  border: 1.2px solid #f1f1f1 !important;
+}
+
+.modal-header {
+  box-shadow: 0px 5px 5px 0px #00000045;
+}
+
+.select-wrapper {
+  padding-inline: 4px;
+}
+
+.custom-select {
+  padding: 0;
+  position: relative;
+  border-radius: 0;
+  display: inline-table;
+  border: 1px solid #d5d5d5;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  text-align: left;
+  color: #333333;
+}
+
+.custom-select select {
+  display: none;
+  /*hide original SELECT element:*/
+}
+
+.select-selected {
+  background-color: white;
+}
+
+/*style the arrow inside the select element:*/
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 16px;
+  right: 12px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #333333 transparent transparent transparent;
+}
+
+/*point the arrow upwards when the select box is open (active):*/
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #0e0303 transparent;
+  top: 7px;
+}
+
+/*style the items (options), including the selected item:*/
+.select-items div, .select-selected {
+  color: black;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/*style items (options):*/
+.select-items {
+  position: absolute;
+  background-color: #eceef0;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+/*hide the items when the select box is closed:*/
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.radio_buttons {
+  gap: 6px;
+}
+
+.radio-wrapper {
+  gap: 7px !important;
+}
+.radio-wrapper label {
+  font-size: 16px;
+  font-weight: 500;
+  font-style: normal;
+  text-align: left;
+  color: #333333;
+  margin: 0 !important;
+}
+.radio-wrapper input {
+  accent-color: #333333;
+}
+
+.modal-body {
+  padding-top: 28px;
+}
+
+.rating-block h5 {
+  font-size: 16px;
+  font-weight: 500;
+  font-style: normal;
+  text-align: left;
+  color: #333333;
+  margin-bottom: 30px;
+}
+.rating-block h5:last-child {
+  margin-bottom: 0;
+}
+
+.review h5 {
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  text-align: left;
+  color: #666666;
+  margin-bottom: 30px;
+}
+.review h5:last-child {
+  margin-bottom: 0;
+}
+
+.modal-icon {
+  gap: 18px;
+}
+
+.modal-content {
+  border-radius: 0;
+  border-inline: 2.5px solid #d53d38;
+  border-block: 4px solid #d53d38;
+}
+
+@media only screen and (max-width: 575px) {
+  .text-field {
+    padding-left: 8px;
+    padding-top: 0px;
+    padding-right: 29px;
+  }
+}
+.label-title {
+  font-size: 16px;
+  font-weight: 500;
+  font-style: normal;
+  color: #333333;
+}
+
+.rating-start-icon {
+  display: flex;
+  justify-content: end;
+  gap: 16px;
+  margin-bottom: 30px;
+}
+.rating-start-icon i {
+  color: yellow;
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 400px) {
+  .rating-start-icon {
+    gap: 5px;
+    margin-right: -16px;
+  }
+}
+.pros-trash {
+  top: 2px;
+  right: 11px;
+}
+.pros-trash i {
+  font-size: 16px;
+  color: #666666;
+}
